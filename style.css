@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+
+button,input {
+    cursor: pointer;
+}
+
+.content {
+    max-width: 1000px;
+      border: 2px solid rgb(124, 123, 123);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: rgb(61, 55, 55);
+    font-size: 23px;
+
+}
+
+.sample {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(78, 150, 150, 0.767);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twoDiv {
+    width: 100%;
+    display: flex;
+}
+
+.box1 {
+    width: 80%;
+}
+
+.count1 {
+    width: 100%;
+    background-color: rgb(84, 84, 230);
+    min-height: 100px;
+    border: 2px solid rgb(124, 123, 123);
+}
+
+.count2-3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.count2 {
+    background-color: rgb(4, 184, 4);
+    height: 100px;
+    width: 100%;
+     border: 2px solid rgb(124, 123, 123);
+}
+
+.count3 {
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+     border: 2px solid rgb(124, 123, 123);
+}
+
+.box2 {
+    height: 200px;
+    background-color: yellow;
+    width: 60%;
+    border: 2px solid rgba(221, 215, 215, 0.481);
+}
+
+.boxesPart1 {
+    width: 80%;
+}
+
+.align {
+    display: flex;
+    width: 100%;
+}
+
+.cout5 {
+    background-color: rgb(58, 156, 156);
+    width: 100%;
+    height: 100px;
+    border: 2px solid rgba(221, 215, 215, 0.481);
+}
+
+.boxes {
+    display: flex;
+}
+
+.count6-9 {
+    width: 100%;
+}
+
+.count6 {
+    height: 100px;
+    background-color: pink;
+    border: 2px solid rgb(124, 123, 123);
+}
+
+.count9 {
+    height: 100px;
+    background-color: rgb(56, 115, 145);
+     border: 2px solid rgb(124, 123, 123);
+}
+
+.count8 {
+    width: 100%;
+    height: 200px;
+    background-color: brown;
+      border: 2px solid rgb(124, 123, 123);
+}
+
+.boxesPart2 {
+    width: 60%;
+}
+
+.count7 {
+    width: 100%;
+    background-color: greenyellow;
+    height: 200px;
+     border: 2px solid rgb(124, 123, 123);
+}
+
+.count10 {
+    background-color: rgb(66, 153, 153);
+    height: 100px;
+     border: 2px solid rgb(124, 123, 123);
+}
+
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0.3);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.count1, .box2, .count2, .count3, .count6, .cout5, .count7, .count10, .count8, .count9 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: rotateIn 0.7s ease-in-out forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.count1:hover, .box2:hover, .count2:hover, .count3:hover, .count6:hover, .cout5:hover, .count7:hover, .count10:hover, .count8:hover, .count9:hover , .sample:hover {
+    opacity: 0.5;
+    background-color: rgb(234, 230, 238);
+    cursor: pointer;
+    color:rgb(19, 19, 19)
+}
+
+
+@media screen and (max-width: 376px) {
+    .sample {
+        background-color: rgb(68, 2, 2);
+    }
+
+    .content {
+        max-width: 376px;
+        color: rgb(135, 111, 4);
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .count7 {
+        background-color: rgb(153, 149, 149);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sample {
+        background-color: rgb(92, 89, 105);
+    }
+
+    .content {
+        margin: 13px;
+        max-width: 1440px;
+        color: rgb(193, 187, 187);
+        font-size: 33px;
+        margin: auto;
+        margin-top: 40px;
+
+    }
+
+    .box2 {
+        background-color: tomato;
+    }
+
+    .count7 {
+        background-color: rgb(133, 82, 100);
+    }
+
+    .count8 {
+        background-color: rgb(195, 208, 170);
+        color: rgb(73, 0, 128);
+    }
+}
