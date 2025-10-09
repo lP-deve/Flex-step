@@ -179,7 +179,7 @@ button,input {
         max-width: 410px;
         color: rgb(135, 111, 4);
         margin: auto;
-        margin-top: 40px;
+         margin:16px
     }
     .box2{
         background-color: rgb(54, 62, 78);
@@ -233,7 +233,8 @@ button,input {
         color: rgb(193, 187, 187);
         font-size: 33px;
         margin: auto;
-        margin-top: 40px;
+        margin:16px
+
 
     }
     .box1{
